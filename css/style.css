@@ -38,3 +38,9 @@
 .slider button:hover{
     opacity: 100%;
 }
+.slider button#btnLeft{
+    left: 0;
+}
+.slider button#btnRight{
+    right: 0;
+}
