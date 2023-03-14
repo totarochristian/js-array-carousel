@@ -30,8 +30,8 @@
     color: white;
     font-size: 2rem;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
     opacity: 70%;
 }
@@ -39,10 +39,10 @@
     opacity: 100%;
 }
 .slider button#btnLeft{
-    left: 0;
+    top: 0;
 }
 .slider button#btnRight{
-    right: 0;
+    bottom: 0;
 }
 @media screen and (max-width: 610px){
     .slider{
