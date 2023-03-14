@@ -44,3 +44,9 @@
 .slider button#btnRight{
     right: 0;
 }
+@media screen and (max-width: 610px){
+    .slider{
+        width: 100%;
+        height: 100vh;
+    }
+}
