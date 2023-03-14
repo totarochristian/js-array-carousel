@@ -60,15 +60,20 @@ them as "templates".
 - Add event listeners to the buttons and connect them to the functions to increase and decrease the index of the slider
 - Make the loop between last and first images
 - Define a right container where define a preview of the images
+- Define function to add preview images to the preview container
+- Define function to call the update of the active image in the preview container
+- Apply the two new functions to make the scroll of the images in the preview (+ style effects to change the brightness 
+  and the bordr of the active img of the preview).
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 */
 const sliderImages = ["01.webp","02.webp","03.webp","04.webp","05.webp"];
 let sliderCurrentIndex = 0;
+let sliderPrevIndex = 0;
 
-UpdateSlideShowed();
 AddPreviewImages();
+UpdateSlideShowed();
 
 document.getElementById("btnPrev").addEventListener("click",PrevSlide);
 document.getElementById("btnNext").addEventListener("click",NextSlide);
