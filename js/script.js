@@ -55,6 +55,7 @@ them as "templates".
 - Define the array with the images
 - Define the index of the element to show as start
 - Define function to update the image showed in the carousel
+- Define function to decrease the slider index and show the new image in the slider (previous image respect the one showed)
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
