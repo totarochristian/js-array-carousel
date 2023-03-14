@@ -66,6 +66,10 @@ them as "templates".
   and the bordr of the active img of the preview).
 - Move the arrows in the preview instead of the slider
 ---------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------   My bonus   -------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+- Make the scroll of the images in the carousel by the mouse wheel scroll
+---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 */
@@ -78,3 +82,11 @@ UpdateSlideShowed();
 
 document.getElementById("btnPrev").addEventListener("click",PrevSlide);
 document.getElementById("btnNext").addEventListener("click",NextSlide);
+
+document.getElementById("carousel").addEventListener("wheel", function(event) {
+    const delta = Math.sign(event.deltaY);
+    if(delta==1)
+        NextSlide();
+    else if(delta==-1)
+        PrevSlide();
+});
