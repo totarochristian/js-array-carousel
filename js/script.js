@@ -64,6 +64,7 @@ them as "templates".
 - Define function to call the update of the active image in the preview container
 - Apply the two new functions to make the scroll of the images in the preview (+ style effects to change the brightness 
   and the bordr of the active img of the preview).
+- Move the arrows in the preview instead of the slider
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
