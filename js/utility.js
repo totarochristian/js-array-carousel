@@ -4,6 +4,12 @@ function UpdateSlide(){
 function PrevSlide(){
     if(sliderCurrentIndex>0)
         sliderCurrentIndex--;
-        
+
+    UpdateSlide();
+}
+function NextSlide(){
+    if(sliderCurrentIndex<(sliderImages.length-1))
+        sliderCurrentIndex++;
+
     UpdateSlide();
 }
