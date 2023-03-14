@@ -45,6 +45,7 @@ function AddPreviewImages(){
     const preview = document.getElementsByClassName("preview")[0];
     for(let i=0; i<sliderImages.length; i++){
         preview.innerHTML += '<div id="previewImg_'+i+'" class="imgCont"><img src="./assets/img/'+sliderImages[i]+'" alt="Immagine '+i+' della preview"></div>';
+        document.getElementById("previewImg_"+i).style.height = ""+(100/sliderImages.length)+"%";
     }
 }
 

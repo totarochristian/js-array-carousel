@@ -35,7 +35,7 @@
 }
 .preview .imgCont{
     width: 100%;
-    height: calc(100% / 5);
+    /* height: calc(100% / 5); */
     filter: brightness(50%);
 }
 .preview .imgCont img{

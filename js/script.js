@@ -73,7 +73,7 @@ them as "templates".
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 */
-const sliderImages = ["01.webp","02.webp","03.webp","04.webp","05.webp"];
+const sliderImages = ["01.webp","02.webp","03.webp","04.webp","05.webp","collina.jpg","fuoco.jpg","mare.jpg","paesaggio.jpg","paesaggio_notturno.jpg","panchina.jpg"];
 let sliderCurrentIndex = 0;
 let sliderPrevIndex = 0;
 
