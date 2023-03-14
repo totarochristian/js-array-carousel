@@ -1,15 +1,19 @@
 function UpdateSlideShowed(){
     document.getElementById("sliderImg").setAttribute("src","./assets/img/"+sliderImages[sliderCurrentIndex]);
 }
+
 function PrevSlide(){
     if(sliderCurrentIndex>0)
         sliderCurrentIndex--;
-
-    UpdateSlideShowed();
+    else
+        sliderCurrentIndex = sliderImages.length-1;
+    UpdateSlide();
 }
+
 function NextSlide(){
     if(sliderCurrentIndex<(sliderImages.length-1))
         sliderCurrentIndex++;
-
-    UpdateSlideShowed();
+    else
+        sliderCurrentIndex = 0;
+    UpdateSlide();
 }

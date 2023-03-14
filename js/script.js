@@ -58,6 +58,7 @@ them as "templates".
 - Define function to decrease the slider index and show the new image in the slider (previous image respect the one showed)
 - Define function to increase the slider index and show the new image in the slider (next image respect the one showed)
 - Add event listeners to the buttons and connect them to the functions to increase and decrease the index of the slider
+- Make the loop between last and first images
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
