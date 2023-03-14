@@ -57,6 +57,7 @@ them as "templates".
 - Define function to update the image showed in the carousel
 - Define function to decrease the slider index and show the new image in the slider (previous image respect the one showed)
 - Define function to increase the slider index and show the new image in the slider (next image respect the one showed)
+- Add event listeners to the buttons and connect them to the functions to increase and decrease the index of the slider
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
@@ -64,4 +65,7 @@ them as "templates".
 const sliderImages = ["01.webp","02.webp","03.webp","04.webp","05.webp"];
 let sliderCurrentIndex = 0;
 
-UpdateSlide();
+UpdateSlideShowed();
+
+document.getElementById("btnLeft").addEventListener("click",PrevSlide);
+document.getElementById("btnRight").addEventListener("click",NextSlide);
