@@ -59,6 +59,7 @@ them as "templates".
 - Define function to increase the slider index and show the new image in the slider (next image respect the one showed)
 - Add event listeners to the buttons and connect them to the functions to increase and decrease the index of the slider
 - Make the loop between last and first images
+- Define a right container where define a preview of the images
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
@@ -67,6 +68,7 @@ const sliderImages = ["01.webp","02.webp","03.webp","04.webp","05.webp"];
 let sliderCurrentIndex = 0;
 
 UpdateSlideShowed();
+AddPreviewImages();
 
 document.getElementById("btnPrev").addEventListener("click",PrevSlide);
 document.getElementById("btnNext").addEventListener("click",NextSlide);

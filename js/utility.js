@@ -26,3 +26,10 @@ function NextSlide(){
         sliderCurrentIndex = 0;
     UpdateSlideShowed();
 }
+
+function AddPreviewImages(){
+    const preview = document.getElementsByClassName("preview")[0];
+    for(let i=0; i<sliderImages.length; i++){
+        preview.innerHTML += '<div class="imgCont"><img id="previewImg_'+i+'" src="./assets/img/'+sliderImages[i]+'" alt="Immagine '+i+' della preview"></div>';
+    }
+}
