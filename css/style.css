@@ -12,3 +12,8 @@
     align-content: center;
     align-items: center;
 }
+.slider{
+    width: 80%;
+    height: 80vh;
+    position: relative;
+}
