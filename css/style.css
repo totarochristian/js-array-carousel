@@ -38,10 +38,10 @@
 .slider button:hover{
     opacity: 100%;
 }
-.slider button#btnLeft{
+.slider button#btnPrev{
     top: 0;
 }
-.slider button#btnRight{
+.slider button#btnNext{
     bottom: 0;
 }
 @media screen and (max-width: 610px){

@@ -68,5 +68,5 @@ let sliderCurrentIndex = 0;
 
 UpdateSlideShowed();
 
-document.getElementById("btnLeft").addEventListener("click",PrevSlide);
-document.getElementById("btnRight").addEventListener("click",NextSlide);
+document.getElementById("btnPrev").addEventListener("click",PrevSlide);
+document.getElementById("btnNext").addEventListener("click",NextSlide);
