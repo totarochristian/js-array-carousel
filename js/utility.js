@@ -49,6 +49,10 @@ function AddPreviewImages(){
     }
 }
 
+/**
+ * Function used to scroll up and down the carousel images using the wheel of the mouse
+ * @param {*} event Event wheel that call the function
+ */
 function MouseWheelScroll(event){
     const delta = Math.sign(event.deltaY);
     if(delta==1)
