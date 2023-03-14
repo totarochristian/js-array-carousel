@@ -83,10 +83,4 @@ UpdateSlideShowed();
 document.getElementById("btnPrev").addEventListener("click",PrevSlide);
 document.getElementById("btnNext").addEventListener("click",NextSlide);
 
-document.getElementById("carousel").addEventListener("wheel", function(event) {
-    const delta = Math.sign(event.deltaY);
-    if(delta==1)
-        NextSlide();
-    else if(delta==-1)
-        PrevSlide();
-});
+document.getElementById("carousel").addEventListener("wheel", MouseWheelScroll,{passive: true});

@@ -47,3 +47,11 @@ function AddPreviewImages(){
         preview.innerHTML += '<div id="previewImg_'+i+'" class="imgCont"><img src="./assets/img/'+sliderImages[i]+'" alt="Immagine '+i+' della preview"></div>';
     }
 }
+
+function MouseWheelScroll(event){
+    const delta = Math.sign(event.deltaY);
+    if(delta==1)
+        NextSlide();
+    else if(delta==-1)
+        PrevSlide();
+}
