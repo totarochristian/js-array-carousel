@@ -7,7 +7,7 @@ function PrevSlide(){
         sliderCurrentIndex--;
     else
         sliderCurrentIndex = sliderImages.length-1;
-    UpdateSlide();
+    UpdateSlideShowed();
 }
 
 function NextSlide(){
@@ -15,5 +15,5 @@ function NextSlide(){
         sliderCurrentIndex++;
     else
         sliderCurrentIndex = 0;
-    UpdateSlide();
+    UpdateSlideShowed();
 }
