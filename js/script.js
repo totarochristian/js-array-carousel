@@ -53,8 +53,10 @@ them as "templates".
 - Define basic html to show a single image and the basic elements
 - Define the style of basic html
 - Define the array with the images
+- Define the index of the element to show as start
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 */
 const sliderImages = ["01.webp","02.webp","03.webp","04.webp","05.webp"];
+let sliderCurrentIndex = 0;
