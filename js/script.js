@@ -76,6 +76,7 @@ them as "templates".
 const sliderImages = ["01.webp","02.webp","03.webp","04.webp","05.webp","collina.jpg","fuoco.jpg","mare.jpg","paesaggio.jpg","paesaggio_notturno.jpg","panchina.jpg"];
 let sliderCurrentIndex = 0;
 let sliderPrevIndex = 0;
+let intervalSlider;
 
 AddPreviewImages();
 UpdateSlideShowed();
@@ -84,3 +85,7 @@ document.getElementById("btnPrev").addEventListener("click",PrevSlide);
 document.getElementById("btnNext").addEventListener("click",NextSlide);
 
 document.getElementById("carousel").addEventListener("wheel", MouseWheelScroll,{passive: true});
+
+window.addEventListener("load",StartAutoCarousel);
+document.getElementById("carousel").addEventListener("mouseout",StartAutoCarousel);
+document.getElementById("carousel").addEventListener("mouseover",StopAutoCarousel);

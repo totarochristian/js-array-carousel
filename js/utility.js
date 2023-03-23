@@ -60,3 +60,13 @@ function MouseWheelScroll(event){
     else if(delta==-1)
         PrevSlide();
 }
+
+/** Function used to start the auto scroll of the images of the carousel */
+function StartAutoCarousel(){
+    intervalSlider = setInterval(NextSlide, 3000);
+}
+
+/** Function used to stop the auto scroll of the images of the carousel */
+function StopAutoCarousel(){
+    clearInterval(intervalSlider);
+}
