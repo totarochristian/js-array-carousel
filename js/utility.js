@@ -2,7 +2,7 @@
  * Function used to update the image showed (as active) in the slider.
  */
 function UpdateSlideShowed(){
-    document.getElementById("sliderImg").setAttribute("src","./assets/img/"+sliderImages[sliderCurrentIndex]);
+    document.getElementById("sliderImg").setAttribute("src","./assets/img/"+sliderImages[sliderCurrentIndex].img);
     UpdatePreviewSlideShowed();
 }
 
@@ -44,7 +44,7 @@ function NextSlide(){
 function AddPreviewImages(){
     const preview = document.getElementsByClassName("preview")[0];
     for(let i=0; i<sliderImages.length; i++){
-        preview.innerHTML += '<div id="previewImg_'+i+'" class="imgCont"><img src="./assets/img/'+sliderImages[i]+'" alt="Immagine '+i+' della preview"></div>';
+        preview.innerHTML += '<div id="previewImg_'+i+'" class="imgCont"><img src="./assets/img/'+sliderImages[i].img+'" alt="Immagine '+i+' della preview"></div>';
         document.getElementById("previewImg_"+i).style.height = ""+(100/sliderImages.length)+"%";
     }
 }
