@@ -73,7 +73,52 @@ them as "templates".
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 */
-const sliderImages = ["01.webp","02.webp","03.webp","04.webp","05.webp","collina.jpg","fuoco.jpg","mare.jpg","paesaggio.jpg","paesaggio_notturno.jpg","panchina.jpg"];
+const sliderImages = [
+  {
+    img: "01.webp",
+    title: "Spiderman"
+  },
+  {
+    img: "02.webp",
+    title: "Ratchet & Clank"
+  },
+  {
+    img: "03.webp",
+    title: "Bad guys"
+  },
+  {
+    img: "04.webp",
+    title: "Gatto senza stivali"
+  },
+  {
+    img: "05.webp",
+    title: "Avengers"
+  },
+  {
+    img: "collina.jpg",
+    title: "Collina con vista su Sassuolo"
+  },
+  {
+    img: "fuoco.jpg",
+    title: "Fuoco scoppiettante"
+  },
+  {
+    img: "mare.jpg",
+    title: "Vista su Porto Ottiolu"
+  },
+  {
+    img: "paesaggio.jpg",
+    title: "Vista dal Colle di San Maffeo"
+  },
+  {
+    img: "paesaggio_notturno.jpg",
+    title: "Vista sulla Sassuolo notturna"
+  },
+  {
+    img: "panchina.jpg",
+    title: "Parco in Via delle Cave"
+  }
+];
 let sliderCurrentIndex = 0;
 let sliderPrevIndex = 0;
 let intervalSlider;
