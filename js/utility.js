@@ -3,6 +3,7 @@
  */
 function UpdateSlideShowed(){
     document.getElementById("sliderImg").setAttribute("src","./assets/img/"+sliderImages[sliderCurrentIndex].img);
+    document.getElementById("sliderTitle").innerText = sliderImages[sliderCurrentIndex].title;
     UpdatePreviewSlideShowed();
 }
 
